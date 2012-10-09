@@ -3,6 +3,8 @@ kohana-pagination-directories
 
 Kohana Pagination support for Routes using directories
 
+See Example file for a better formated example
+https://github.com/cbake6807/kohana-pagination-directories/blob/master/example_usage.php
 
 Example Controller Usage
 
