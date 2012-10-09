@@ -6,16 +6,20 @@ Kohana Pagination support for Routes using directories
 See Example file for a better formated example
 https://github.com/cbake6807/kohana-pagination-directories/blob/master/example_usage.php
 
+class Kohana_Pagination has been modified to include 2 cases for the "directory_route" source. This allows the Pagination class
+to get the current URL params form your Toure.
+
+
 Example Controller Usage
 
 ```$items = Model_Items::get();```
 
 ```$pagination = Pagination::factory(array(
 'total_items'    => count($items),
-'items_per_page' => 14,
-'view'			 => 'pagination/basic',
-    'auto_hide'		 => TRUE,
-    'current_page'	 => array(
+	'items_per_page' => 14,
+	'view'			 => 'pagination/basic',
+	'auto_hide'		 => TRUE,
+	'current_page'	 => array(
 	    "key"		=> "page",
 	    "directory"		=> $this->request->directory(),
 	    "controller"	=> $this->request->controller(),
