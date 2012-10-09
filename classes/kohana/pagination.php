@@ -236,8 +236,8 @@ class Kohana_Pagination {
 
 			case 'directory_route':
 
-				return URL::site('/' . DS . $this->config['current_page']['directory'] . DS . $this->config['current_page']['controller'] .
-						DS . $this->config['current_page']['action'] . DS . $page . DS);
+				return URL::site('/' . DIRECTORY_SEPARATOR . $this->config['current_page']['directory'] . DIRECTORY_SEPARATOR . $this->config['current_page']['controller'] .
+						DIRECTORY_SEPARATOR . $this->config['current_page']['action'] . DIRECTORY_SEPARATOR . $page . DIRECTORY_SEPARATOR);
 		}
 
 		return '#';
