@@ -6,12 +6,12 @@ Kohana Pagination support for Routes using directories
 
 Example Controller Usage
 
-```$items = Modwl_Items::get();```
+```$items = Model_Items::get();```
 
 ```$pagination = Pagination::factory(array(
-    'total_items'    => count($items),
-    'items_per_page' => 14,
-    'view'			 => 'pagination/basic',
+'total_items'    => count($items),
+'items_per_page' => 14,
+'view'			 => 'pagination/basic',
     'auto_hide'		 => TRUE,
     'current_page'	 => array(
 	    "key"		=> "page",
