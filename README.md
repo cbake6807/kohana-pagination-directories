@@ -7,7 +7,7 @@ See Example file for a better formated example
 https://github.com/cbake6807/kohana-pagination-directories/blob/master/example_usage.php
 
 class Kohana_Pagination has been modified to include 2 cases for the "directory_route" source. This allows the Pagination class
-to get the current URL params form your Toure.
+to get the current URL params form your Route.
 
 
 Example Controller Usage
